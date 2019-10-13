@@ -1,17 +1,130 @@
-* {
-  margin:0px;
-  padding:0px;
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+
+selector {
+	prop: valeur;
 }
 
-#octocat {
-  display: block;
-  width:384px;
-  margin: 50px auto;
+body {
+	background-color: rgb(240,240,240);
+	font-family: 'Lato', sans-serif;
+	font-weight: lighter;
+	font-size: 15px;
 }
 
-p {
-  display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+
+
+h1{
+	color: #FA6769;
+	font-family: 'Roboto', sans-serif;	
+}
+
+.color-first {
+	color:red;
+}
+
+.footer {
+	font-size: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+.box  {
+	background-color: white;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 5px;
+	padding: 30px;
+	width: 800px;
+	margin: 0 auto;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+
+.cards {
+	width: 800px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+
+.button {
+	text-align: center;
+	font-weight: bold;
+	padding: 20px;
+	background-color: #FA6769;
+	color: white;
+	max-width: 200px;
+	margin: 0 auto;
+	border-radius: 10px;
+	cursor:pointer;
+	text-decoration: none;
+}
+
+.button:hover {
+	color: black;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	color: grey;
+}
+
+.imagepro {
+	border-radius: 50%;
+	width: 20%;
+	height: 20%;
+}
+
+
+.lien {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.img {
+	max-height: 70px;
+}
+
+.img2 {
+	max-height: 70px;
+	 margin-right: 10px;
+	 margin-left: 100px;
+}
+
+.card {
+	display: flex;
+	background-color: white;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+	border-radius: 5px;
+	padding: 15px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .box {
+    width: 800px;
+
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .box {
+    width: 520px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .box {
+    width: 300px;
+  }
 }
